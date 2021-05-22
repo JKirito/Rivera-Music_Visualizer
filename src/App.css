@@ -1,38 +1,193 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1b1c22;
+  /* background-image: url("./images/background.svg");
+  background-size: cover; */
+}
+canvas {
+  filter: blur(0.25px) contrast(0.9) brightness(1.5);
+}
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 130px;
+  width: 100vw;
+  /* height: 100vh; */
+  height: calc(100vh - 130px);
+  background-image: url("./images/background.svg");
+  background-size: cover;
+  z-index: -1;
+}
+.mainContainer {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+.mainContainer > header {
+  margin-left: 40px;
+  padding-top: 38px;
+  height: 20vh;
+}
+.mainContainer > header > h4 {
+  font-size: 26px;
+}
+.mainContainer > header > span {
+  font-size: 18px;
+  color: #808080;
+}
+.mainContainer > #mainsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.mainContainer > #secondarysection {
+  padding-left: 40px;
+  padding-top: -20px;
+  height: 20vh;
+}
+.mainContainer > #secondarysection > ul {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #969696;
+}
+.mainContainer > #secondarysection > span {
+  font-size: 22px;
+}
+.mainContainer > #secondarysection > ul > li {
+  margin: 5px 0;
+  font-size: 18px;
+}
+#s_own {
+  font-size: 22px;
+  color: #a1a1a1;
+  margin-top: -92px;
+}
+#s_sound {
+  font-size: 34px;
+}
+.mainContainer > footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem 0; */
+  width: 100%;
+  height: 20vh;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+.mainContainer > footer > div > button {
+  background: #343740;
+  border: none;
+  border: 1px solid #ffffff;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  border-radius: 48px;
+  width: 198px;
+  height: 57px;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subContainer {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px 0;
+  justify-content: space-between;
+  border-bottom: 2px solid #525252;
+  color: white;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  height: 10vh;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 6.5px */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.circle {
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.infoContainer {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  height: 10vh;
+  margin: 0 auto;
+}
+.infoContainer > span:nth-child(1) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 3px 0;
+  margin-top: 10px;
+}
+.infoContainer > span:nth-child(2) {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 2px 0;
+  color: #ffffff;
+}
+.infoContainer > span:nth-child(3) {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 2px 0;
+  color: #ffffff;
+}
+.footerbase {
+  height: 29vh;
+}
+.mainfooter {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 18px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
+  font-family: Roboto;
+  font-style: normal;
+  height: 6vh;
+  /* font-weight: bold; */
 }
-
-.App-link {
-  color: #61dafb;
+.mainfooter > span {
+  font-size: 14px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.closebuttoncontainer {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: white;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
