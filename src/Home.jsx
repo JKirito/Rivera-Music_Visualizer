@@ -197,7 +197,7 @@ const VisualizeUI = ({ audioFile, setIsHome }) => {
                 </div>
                 <footer>
                     <div className='mainfooter'>
-                        <span>Github:- JKirito@github.com</span>
+                        <span>Github:- www.github.com/JKirito</span>
                         <div className='circle'>
                             <div className='fab fa-facebook-f'></div>
                         </div>
